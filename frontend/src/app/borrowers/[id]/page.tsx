@@ -3,31 +3,35 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { borrowersAPI, photosAPI } from "@/lib/api";
+import { borrowersAPI, photosAPI, fieldNotesAPI } from "@/lib/api";
 import type { BorrowerSummary } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import PhotoUpload from "@/components/PhotoUpload";
+import FieldNotes from "@/components/FieldNotes";
 
 export default function BorrowerDetailPage() {
   const params = useParams();
   const borrowerId = params.id as string;
   const [summary, setSummary] = useState<BorrowerSummary | null>(null);
   const [photos, setPhotos] = useState<any[]>([]);
+  const [fieldNotes, setFieldNotes] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const fetchBorrowerData = async () => {
     try {
       setLoading(true);
-      const [summaryData, photosData] = await Promise.all([
+      const [summaryData, photosData, fieldNotesData] = await Promise.all([
         borrowersAPI.summary(borrowerId),
         photosAPI.list(borrowerId).catch(() => []),
+        fieldNotesAPI.list(borrowerId).catch(() => []),
       ]);
       setSummary(summaryData);
       setPhotos(photosData);
+      setFieldNotes(fieldNotesData);
       setError(null);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to fetch borrower details");
@@ -222,35 +226,26 @@ export default function BorrowerDetailPage() {
             onUploadSuccess={fetchBorrowerData}
           />
 
-          {/* Additional Information Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* Field Notes Section */}
+          <FieldNotes
+            borrowerId={borrowerId}
+            fieldNotes={fieldNotes}
+            onNotesChange={fetchBorrowerData}
+          />
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Field Notes ({field_notes.total})</CardTitle>
-              </CardHeader>
-              <CardContent>
-                {field_notes.total === 0 ? (
-                  <p className="text-sm text-muted-foreground">No field notes recorded</p>
-                ) : (
-                  <p className="text-sm">{field_notes.total} field visit(s) documented</p>
-                )}
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Credit Assessments ({credit_assessments.total})</CardTitle>
-              </CardHeader>
-              <CardContent>
-                {credit_assessments.total === 0 ? (
-                  <p className="text-sm text-muted-foreground">No assessments performed</p>
-                ) : (
-                  <p className="text-sm">{credit_assessments.total} assessment(s) completed</p>
-                )}
-              </CardContent>
-            </Card>
-          </div>
+          {/* Credit Assessments */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Credit Assessments ({credit_assessments.total})</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {credit_assessments.total === 0 ? (
+                <p className="text-sm text-muted-foreground">No assessments performed</p>
+              ) : (
+                <p className="text-sm">{credit_assessments.total} assessment(s) completed</p>
+              )}
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
