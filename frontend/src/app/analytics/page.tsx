@@ -38,13 +38,8 @@ export default function AnalyticsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="flex flex-1 flex-col">
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <Link href="/">
-            <Button variant="ghost">← Back to Home</Button>
-          </Link>
-        </div>
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Portfolio Analytics</h1>
@@ -188,7 +183,6 @@ export default function AnalyticsPage() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">✅</div>
                     <div>
                       <div className="font-semibold">Strong Collection Performance</div>
                       <div className="text-sm text-muted-foreground">
@@ -197,7 +191,6 @@ export default function AnalyticsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">📊</div>
                     <div>
                       <div className="font-semibold">Active Portfolio</div>
                       <div className="text-sm text-muted-foreground">
@@ -208,7 +201,6 @@ export default function AnalyticsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">⏰</div>
                     <div>
                       <div className="font-semibold">Timely Payments</div>
                       <div className="text-sm text-muted-foreground">

@@ -72,13 +72,8 @@ export default function CreditAssessmentPage() {
   const selectedBorrower = borrowers.find(b => b.id === selectedBorrowerId);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="flex flex-1 flex-col">
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <Link href="/">
-            <Button variant="ghost">← Back to Home</Button>
-          </Link>
-        </div>
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Credit Assessment</h1>

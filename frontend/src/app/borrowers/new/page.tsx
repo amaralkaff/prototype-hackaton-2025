@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Select } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function NewBorrowerPage() {
   const router = useRouter();
@@ -33,7 +33,7 @@ export default function NewBorrowerPage() {
     financial_literacy_score: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
 
     if (type === "checkbox") {
@@ -42,6 +42,10 @@ export default function NewBorrowerPage() {
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
+  };
+
+  const handleSelectChange = (name: string, value: string) => {
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -150,16 +154,15 @@ export default function NewBorrowerPage() {
 
                   <div>
                     <label className="block text-sm font-medium mb-2">Gender</label>
-                    <select
-                      name="gender"
-                      value={formData.gender}
-                      onChange={handleChange}
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                    >
-                      <option value="">Select gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                    </select>
+                    <Select value={formData.gender} onValueChange={(value) => handleSelectChange("gender", value)}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select gender" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="male">Male</SelectItem>
+                        <SelectItem value="female">Female</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div>
@@ -175,18 +178,17 @@ export default function NewBorrowerPage() {
 
                   <div>
                     <label className="block text-sm font-medium mb-2">Marital Status</label>
-                    <select
-                      name="marital_status"
-                      value={formData.marital_status}
-                      onChange={handleChange}
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                    >
-                      <option value="">Select status</option>
-                      <option value="single">Single</option>
-                      <option value="married">Married</option>
-                      <option value="divorced">Divorced</option>
-                      <option value="widowed">Widowed</option>
-                    </select>
+                    <Select value={formData.marital_status} onValueChange={(value) => handleSelectChange("marital_status", value)}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select status" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="single">Single</SelectItem>
+                        <SelectItem value="married">Married</SelectItem>
+                        <SelectItem value="divorced">Divorced</SelectItem>
+                        <SelectItem value="widowed">Widowed</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div>
@@ -203,21 +205,20 @@ export default function NewBorrowerPage() {
 
                   <div>
                     <label className="block text-sm font-medium mb-2">Education Level</label>
-                    <select
-                      name="education_level"
-                      value={formData.education_level}
-                      onChange={handleChange}
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                    >
-                      <option value="">Select education</option>
-                      <option value="no_formal">No Formal Education</option>
-                      <option value="primary">Primary</option>
-                      <option value="junior_high">Junior High</option>
-                      <option value="senior_high">Senior High</option>
-                      <option value="diploma">Diploma</option>
-                      <option value="bachelor">Bachelor</option>
-                      <option value="postgraduate">Postgraduate</option>
-                    </select>
+                    <Select value={formData.education_level} onValueChange={(value) => handleSelectChange("education_level", value)}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select education" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="no_formal">No Formal Education</SelectItem>
+                        <SelectItem value="primary">Primary</SelectItem>
+                        <SelectItem value="junior_high">Junior High</SelectItem>
+                        <SelectItem value="senior_high">Senior High</SelectItem>
+                        <SelectItem value="diploma">Diploma</SelectItem>
+                        <SelectItem value="bachelor">Bachelor</SelectItem>
+                        <SelectItem value="postgraduate">Postgraduate</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
                 </div>
               </div>
@@ -266,22 +267,20 @@ export default function NewBorrowerPage() {
                     <label className="block text-sm font-medium mb-2">
                       Business Type <span className="text-destructive">*</span>
                     </label>
-                    <select
-                      name="business_type"
-                      value={formData.business_type}
-                      onChange={handleChange}
-                      required
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                    >
-                      <option value="">Select business type</option>
-                      <option value="agriculture">Agriculture</option>
-                      <option value="retail">Retail</option>
-                      <option value="food_service">Food Service</option>
-                      <option value="crafts">Crafts</option>
-                      <option value="transportation">Transportation</option>
-                      <option value="services">Services</option>
-                      <option value="other">Other</option>
-                    </select>
+                    <Select value={formData.business_type} onValueChange={(value) => handleSelectChange("business_type", value)} required>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select business type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="agriculture">Agriculture</SelectItem>
+                        <SelectItem value="retail">Retail</SelectItem>
+                        <SelectItem value="food_service">Food Service</SelectItem>
+                        <SelectItem value="crafts">Crafts</SelectItem>
+                        <SelectItem value="transportation">Transportation</SelectItem>
+                        <SelectItem value="services">Services</SelectItem>
+                        <SelectItem value="other">Other</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
 
                   <div>

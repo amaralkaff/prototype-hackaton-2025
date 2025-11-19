@@ -8,12 +8,18 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 
 export default function LoansPage() {
   const [loans, setLoans] = useState<Loan[]>([]);
   const [statistics, setStatistics] = useState<LoansStatistics | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   useEffect(() => {
     async function fetchData() {
@@ -52,14 +58,29 @@ export default function LoansPage() {
     });
   };
 
+  // Filter loans based on search term
+  const filteredLoans = loans.filter(loan =>
+    formatCurrency(loan.loan_amount).toLowerCase().includes(searchTerm.toLowerCase()) ||
+    loan.loan_status.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    (loan.purpose && loan.purpose.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    loan.interest_rate.toString().includes(searchTerm) ||
+    loan.loan_term_weeks.toString().includes(searchTerm)
+  );
+
+  // Pagination logic
+  const totalPages = Math.ceil(filteredLoans.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentLoans = filteredLoans.slice(startIndex, endIndex);
+
+  // Reset to page 1 when search changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm]);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="flex flex-1 flex-col">
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <Link href="/">
-            <Button variant="ghost">← Back to Home</Button>
-          </Link>
-        </div>
 
         {error && (
           <div className="bg-destructive/10 text-destructive px-4 py-3 rounded mb-4">
@@ -152,10 +173,33 @@ export default function LoansPage() {
               <CardHeader>
                 <CardTitle>Recent Loans</CardTitle>
                 <CardDescription>
-                  Showing {loans.length} recent loans
+                  Showing {startIndex + 1}-{Math.min(endIndex, filteredLoans.length)} of {filteredLoans.length} loans
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="mb-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+                  <Input
+                    placeholder="Search by amount, status, purpose, rate, or term..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="max-w-md focus:ring-2 focus:ring-primary/20"
+                  />
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-muted-foreground whitespace-nowrap">Rows per page:</span>
+                    <Select value={itemsPerPage.toString()} onValueChange={(value) => setItemsPerPage(Number(value))}>
+                      <SelectTrigger className="w-[70px]">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="5">5</SelectItem>
+                        <SelectItem value="10">10</SelectItem>
+                        <SelectItem value="20">20</SelectItem>
+                        <SelectItem value="50">50</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+
                 <div className="rounded-md border">
                   <Table>
                     <TableHeader>
@@ -170,14 +214,14 @@ export default function LoansPage() {
                       </TableRow>
                     </TableHeader>
                     <TableBody>
-                      {loans.length === 0 ? (
+                      {currentLoans.length === 0 ? (
                         <TableRow>
                           <TableCell colSpan={7} className="text-center text-muted-foreground py-8">
                             No loans found
                           </TableCell>
                         </TableRow>
                       ) : (
-                        loans.map((loan) => (
+                        currentLoans.map((loan) => (
                           <TableRow key={loan.id}>
                             <TableCell className="font-medium">{formatCurrency(loan.loan_amount)}</TableCell>
                             <TableCell>{loan.interest_rate}%</TableCell>
@@ -200,6 +244,35 @@ export default function LoansPage() {
                     </TableBody>
                   </Table>
                 </div>
+
+                {/* Pagination Controls */}
+                {filteredLoans.length > 0 && (
+                  <div className="flex items-center justify-between mt-4">
+                    <div className="text-sm text-muted-foreground">
+                      Page {currentPage} of {totalPages}
+                    </div>
+                    <div className="flex gap-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                        disabled={currentPage === 1}
+                      >
+                        <ChevronLeftIcon className="h-4 w-4" />
+                        Previous
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                        disabled={currentPage === totalPages}
+                      >
+                        Next
+                        <ChevronRightIcon className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
