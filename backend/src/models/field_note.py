@@ -1,4 +1,5 @@
-from sqlalchemy import Column, String, Text, Date, Decimal, ForeignKey, CheckConstraint
+from sqlalchemy import Column, String, Text, Date, ForeignKey, CheckConstraint
+from sqlalchemy.types import Numeric
 from sqlalchemy.dialects.postgresql import UUID, TIMESTAMP, JSONB
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -16,18 +17,16 @@ class FieldNote(Base):
 
     # Note Content
     note_text = Column(Text, nullable=False)
-    note_type = Column(String(50), nullable=False,
-                      CheckConstraint("note_type IN ('initial_visit', 'follow_up', 'repayment_collection', 'business_observation', 'risk_assessment', 'general')"))
+    note_type = Column(String(50), CheckConstraint("note_type IN ('initial_visit', 'follow_up', 'repayment_collection', 'business_observation', 'risk_assessment', 'general')"), nullable=False)
     visit_date = Column(Date)
 
     # Gemini NLP Extraction
-    nlp_analysis_status = Column(String(50), default='pending',
-                                CheckConstraint("nlp_analysis_status IN ('pending', 'processing', 'completed', 'failed')"))
+    nlp_analysis_status = Column(String(50), CheckConstraint("nlp_analysis_status IN ('pending', 'processing', 'completed', 'failed')"), default='pending')
     nlp_analysis_result = Column(JSONB)
 
     # Extracted Insights
-    extracted_income_estimate = Column(Decimal(12, 2))
-    sentiment_score = Column(Decimal(3, 2))
+    extracted_income_estimate = Column(Numeric(12, 2))
+    sentiment_score = Column(Numeric(3, 2))
     risk_flags = Column(JSONB)
     behavioral_insights = Column(JSONB)
 

@@ -14,15 +14,13 @@ class Photo(Base):
     borrower_id = Column(UUID(as_uuid=True), ForeignKey('borrowers.id', ondelete='CASCADE'), nullable=False)
 
     # Photo Details
-    photo_type = Column(String(50), nullable=False,
-                       CheckConstraint("photo_type IN ('business_exterior', 'business_interior', 'inventory', 'house_exterior', 'house_interior', 'assets')"))
+    photo_type = Column(String(50), CheckConstraint("photo_type IN ('business_exterior', 'business_interior', 'inventory', 'house_exterior', 'house_interior', 'assets')"), nullable=False)
     photo_url = Column(Text, nullable=False)
     storage_path = Column(Text)
     file_size_kb = Column(Integer)
 
     # Gemini Vision Analysis
-    vision_analysis_status = Column(String(50), default='pending',
-                                   CheckConstraint("vision_analysis_status IN ('pending', 'processing', 'completed', 'failed')"))
+    vision_analysis_status = Column(String(50), CheckConstraint("vision_analysis_status IN ('pending', 'processing', 'completed', 'failed')"), default='pending')
     vision_analysis_result = Column(JSONB)
 
     # Extracted Features

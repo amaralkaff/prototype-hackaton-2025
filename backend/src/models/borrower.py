@@ -1,4 +1,5 @@
-from sqlalchemy import Column, String, Integer, Decimal, Boolean, Text, CheckConstraint
+from sqlalchemy import Column, String, Integer, Boolean, Text, CheckConstraint
+from sqlalchemy.types import Numeric
 from sqlalchemy.dialects.postgresql import UUID, TIMESTAMP
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -24,8 +25,8 @@ class Borrower(Base):
     # Business Info
     business_type = Column(String(100), nullable=False)
     business_description = Column(Text)
-    claimed_monthly_income = Column(Decimal(12, 2), nullable=False)
-    years_in_business = Column(Decimal(4, 1))
+    claimed_monthly_income = Column(Numeric(12, 2), nullable=False)
+    years_in_business = Column(Numeric(4, 1))
 
     # Demographics
     marital_status = Column(String(50))

@@ -2,19 +2,19 @@
 Field Notes API Routes
 Handles field agent notes and observations
 """
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
 from typing import List, Optional
 from pydantic import BaseModel, UUID4
 from datetime import datetime, date
-from models.field_note import FieldNote
-from models.base import get_db
+from supabase import create_client
 
 from utils.config import get_settings
 from utils.logger import logger
 
 settings = get_settings()
 router = APIRouter(prefix="/field-notes", tags=["field-notes"])
+supabase = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
 
 
 class FieldNoteCreate(BaseModel):
@@ -38,8 +38,8 @@ class FieldNoteResponse(BaseModel):
     created_at: datetime
 
 
-@router.post("/", response_model=FieldNoteResponse, status_code=201)
-async def create_field_note(note: FieldNoteCreate, db=Depends(get_db)):
+@router.post("/", status_code=201)
+async def create_field_note(note: FieldNoteCreate):
     """
     Create a new field note
 
@@ -50,80 +50,80 @@ async def create_field_note(note: FieldNoteCreate, db=Depends(get_db)):
         Created field note with assigned ID
     """
     try:
-        field_note = FieldNote(
-            borrower_id=note.borrower_id,
-            loan_id=note.loan_id,
-            note_text=note.note_text,
-            note_type=note.note_type,
-            visit_date=note.visit_date or datetime.now().date(),
-            field_agent_name=note.field_agent_name,
-            nlp_analysis_status='pending'
-        )
+        note_data = {
+            "borrower_id": str(note.borrower_id),
+            "loan_id": str(note.loan_id) if note.loan_id else None,
+            "note_text": note.note_text,
+            "note_type": note.note_type,
+            "visit_date": note.visit_date.isoformat() if note.visit_date else datetime.now().date().isoformat(),
+            "field_agent_name": note.field_agent_name,
+            "nlp_analysis_status": "pending"
+        }
 
-        db.add(field_note)
-        db.commit()
-        db.refresh(field_note)
+        response = supabase.table('field_notes').insert(note_data).execute()
 
-        logger.info(f"Field note created: {field_note.id}")
-
-        return FieldNoteResponse(
-            id=field_note.id,
-            borrower_id=field_note.borrower_id,
-            loan_id=field_note.loan_id,
-            note_text=field_note.note_text,
-            note_type=field_note.note_type,
-            visit_date=field_note.visit_date,
-            field_agent_name=field_note.field_agent_name,
-            nlp_analysis_status=field_note.nlp_analysis_status,
-            created_at=field_note.created_at
-        )
+        if response.data and len(response.data) > 0:
+            logger.info(f"Field note created successfully for borrower {note.borrower_id}")
+            return response.data[0]
+        else:
+            raise HTTPException(status_code=500, detail="Failed to create field note")
 
     except Exception as e:
         logger.error(f"Error creating field note: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/borrower/{borrower_id}", response_model=List[FieldNoteResponse])
-async def get_borrower_field_notes(borrower_id: str, db=Depends(get_db)):
-    """Get all field notes for a borrower"""
-    try:
-        notes = db.query(FieldNote).filter(FieldNote.borrower_id == borrower_id).order_by(FieldNote.created_at.desc()).all()
+@router.get("/borrower/{borrower_id}")
+async def get_borrower_field_notes(borrower_id: str):
+    """
+    Get all field notes for a borrower
 
-        return [
-            FieldNoteResponse(
-                id=note.id,
-                borrower_id=note.borrower_id,
-                loan_id=note.loan_id,
-                note_text=note.note_text,
-                note_type=note.note_type,
-                visit_date=note.visit_date,
-                field_agent_name=note.field_agent_name,
-                nlp_analysis_status=note.nlp_analysis_status,
-                created_at=note.created_at
-            )
-            for note in notes
-        ]
+    Args:
+        borrower_id: UUID of the borrower
+
+    Returns:
+        List of field notes ordered by creation date (most recent first)
+    """
+    try:
+        response = supabase.table('field_notes').select('*').eq('borrower_id', borrower_id).order('created_at', desc=True).execute()
+
+        if response.data:
+            logger.info(f"Retrieved {len(response.data)} field notes for borrower {borrower_id}")
+            return response.data
+        else:
+            return []
 
     except Exception as e:
-        logger.error(f"Error fetching field notes: {str(e)}")
+        logger.error(f"Error retrieving field notes for borrower {borrower_id}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.delete("/{note_id}")
-async def delete_field_note(note_id: str, db=Depends(get_db)):
-    """Delete a field note"""
+async def delete_field_note(note_id: str):
+    """
+    Delete a field note
+
+    Args:
+        note_id: UUID of the field note to delete
+
+    Returns:
+        Success message
+    """
     try:
-        note = db.query(FieldNote).filter(FieldNote.id == note_id).first()
-        if not note:
+        # Check if note exists
+        response = supabase.table('field_notes').select('id').eq('id', note_id).execute()
+
+        if not response.data or len(response.data) == 0:
             raise HTTPException(status_code=404, detail="Field note not found")
 
-        db.delete(note)
-        db.commit()
+        # Delete the note
+        delete_response = supabase.table('field_notes').delete().eq('id', note_id).execute()
 
+        logger.info(f"Field note {note_id} deleted successfully")
         return {"message": "Field note deleted successfully"}
 
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting field note: {str(e)}")
+        logger.error(f"Error deleting field note {note_id}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

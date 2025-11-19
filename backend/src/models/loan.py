@@ -1,4 +1,5 @@
-from sqlalchemy import Column, String, Decimal, Integer, Date, ForeignKey, CheckConstraint
+from sqlalchemy import Column, String, Integer, Date, ForeignKey, CheckConstraint
+from sqlalchemy.types import Numeric
 from sqlalchemy.dialects.postgresql import UUID, TIMESTAMP
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -14,24 +15,21 @@ class Loan(Base):
     borrower_id = Column(UUID(as_uuid=True), ForeignKey('borrowers.id', ondelete='CASCADE'), nullable=False)
 
     # Loan Details
-    loan_amount = Column(Decimal(12, 2), nullable=False)
+    loan_amount = Column(Numeric(12, 2), nullable=False)
     loan_purpose = Column(String(255))
-    interest_rate = Column(Decimal(5, 2), nullable=False)
+    interest_rate = Column(Numeric(5, 2), nullable=False)
     loan_term_weeks = Column(Integer, nullable=False)
     disbursement_date = Column(Date)
     maturity_date = Column(Date)
 
     # Status
-    loan_status = Column(String(50), nullable=False, default='pending',
-                        CheckConstraint("loan_status IN ('pending', 'active', 'completed', 'defaulted', 'written_off')"))
-    approval_status = Column(String(50), default='pending_review',
-                           CheckConstraint("approval_status IN ('pending_review', 'approved', 'rejected')"))
+    loan_status = Column(String(50), CheckConstraint("loan_status IN ('pending', 'active', 'completed', 'defaulted', 'written_off')"), nullable=False, default='pending')
+    approval_status = Column(String(50), CheckConstraint("approval_status IN ('pending_review', 'approved', 'rejected')"), default='pending_review')
     approved_at = Column(TIMESTAMP(timezone=True))
 
     # Risk Assessment
-    initial_credit_score = Column(Decimal(5, 2))
-    risk_category = Column(String(50),
-                         CheckConstraint("risk_category IN ('low', 'medium', 'high', 'very_high')"))
+    initial_credit_score = Column(Numeric(5, 2))
+    risk_category = Column(String(50), CheckConstraint("risk_category IN ('low', 'medium', 'high', 'very_high')"))
 
     # Metadata
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
@@ -56,12 +54,11 @@ class Repayment(Base):
     # Payment Details
     due_date = Column(Date, nullable=False)
     paid_date = Column(Date)
-    expected_amount = Column(Decimal(12, 2), nullable=False)
-    paid_amount = Column(Decimal(12, 2), default=0)
+    expected_amount = Column(Numeric(12, 2), nullable=False)
+    paid_amount = Column(Numeric(12, 2), default=0)
 
     # Payment Status
-    payment_status = Column(String(50), nullable=False, default='pending',
-                          CheckConstraint("payment_status IN ('pending', 'paid', 'partial', 'late', 'missed')"))
+    payment_status = Column(String(50), CheckConstraint("payment_status IN ('pending', 'paid', 'partial', 'late', 'missed')"), nullable=False, default='pending')
     days_overdue = Column(Integer, default=0)
 
     # Tracking

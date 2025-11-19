@@ -13,13 +13,11 @@ from supabase import create_client, Client
 
 from utils.config import get_settings
 from utils.logger import logger
-from models.photo import Photo
-from models.base import get_db
 
 settings = get_settings()
 router = APIRouter(prefix="/photos", tags=["photos"])
 
-# Supabase client for storage
+# Supabase client for storage and database
 supabase: Client = create_client(settings.SUPABASE_URL, settings.SUPABASE_SERVICE_KEY)
 
 # Allowed file extensions and max size
@@ -60,8 +58,7 @@ def validate_image(file: UploadFile) -> tuple[bool, str]:
 async def upload_photo(
     borrower_id: str,
     photo_type: str,
-    file: UploadFile = File(...),
-    db = Depends(get_db)
+    file: UploadFile = File(...)
 ):
     """
     Upload a photo for a borrower
@@ -117,28 +114,31 @@ async def upload_photo(
                 detail=f"Failed to upload to storage: {str(storage_error)}"
             )
 
-        # Save metadata to database
-        photo = Photo(
-            borrower_id=borrower_id,
-            photo_type=photo_type,
-            photo_url=photo_url,
-            storage_path=filename,
-            file_size_kb=file_size // 1024  # Convert bytes to KB
-        )
+        # Save metadata to database via Supabase
+        photo_data = {
+            "borrower_id": borrower_id,
+            "photo_type": photo_type,
+            "photo_url": photo_url,
+            "storage_path": filename,
+            "file_size_kb": file_size // 1024,  # Convert bytes to KB
+            "vision_analysis_status": "pending"
+        }
 
-        db.add(photo)
-        db.commit()
-        db.refresh(photo)
+        db_response = supabase.table('photos').insert(photo_data).execute()
 
-        logger.info(f"Photo uploaded successfully: {photo.photo_id}")
+        if not db_response.data or len(db_response.data) == 0:
+            raise HTTPException(status_code=500, detail="Failed to save photo metadata")
+
+        photo = db_response.data[0]
+        logger.info(f"Photo uploaded successfully: {photo['id']}")
 
         return PhotoUploadResponse(
-            photo_id=photo.id,
-            borrower_id=photo.borrower_id,
-            photo_url=photo.photo_url,
-            photo_type=photo.photo_type,
-            file_size_kb=photo.file_size_kb,
-            uploaded_at=photo.uploaded_at,
+            photo_id=photo['id'],
+            borrower_id=photo['borrower_id'],
+            photo_url=photo['photo_url'],
+            photo_type=photo['photo_type'],
+            file_size_kb=photo['file_size_kb'],
+            uploaded_at=photo['uploaded_at'],
             message="Photo uploaded successfully"
         )
 
@@ -149,43 +149,50 @@ async def upload_photo(
         raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
 
 @router.get("/borrower/{borrower_id}", response_model=List[PhotoMetadata])
-async def get_borrower_photos(borrower_id: str, db = Depends(get_db)):
+async def get_borrower_photos(borrower_id: str):
     """Get all photos for a borrower"""
     try:
-        photos = db.query(Photo).filter(Photo.borrower_id == borrower_id).all()
-        return [
-            PhotoMetadata(
-                photo_id=photo.id,
-                borrower_id=photo.borrower_id,
-                photo_type=photo.photo_type,
-                photo_url=photo.photo_url,
-                file_size_kb=photo.file_size_kb,
-                uploaded_at=photo.uploaded_at
-            )
-            for photo in photos
-        ]
+        response = supabase.table('photos').select('*').eq('borrower_id', borrower_id).execute()
+
+        if response.data:
+            return [
+                PhotoMetadata(
+                    photo_id=photo['id'],
+                    borrower_id=photo['borrower_id'],
+                    photo_type=photo['photo_type'],
+                    photo_url=photo['photo_url'],
+                    file_size_kb=photo['file_size_kb'],
+                    uploaded_at=photo['uploaded_at']
+                )
+                for photo in response.data
+            ]
+        else:
+            return []
     except Exception as e:
         logger.error(f"Error fetching photos: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.delete("/{photo_id}")
-async def delete_photo(photo_id: str, db = Depends(get_db)):
+async def delete_photo(photo_id: str):
     """Delete a photo"""
     try:
-        photo = db.query(Photo).filter(Photo.id == photo_id).first()
-        if not photo:
+        # Get photo info
+        response = supabase.table('photos').select('*').eq('id', photo_id).execute()
+
+        if not response.data or len(response.data) == 0:
             raise HTTPException(status_code=404, detail="Photo not found")
+
+        photo = response.data[0]
 
         # Delete from Supabase Storage
         try:
             bucket_name = "borrower-photos"
-            supabase.storage.from_(bucket_name).remove([photo.storage_path])
+            supabase.storage.from_(bucket_name).remove([photo['storage_path']])
         except Exception as storage_error:
             logger.warning(f"Failed to delete from storage: {str(storage_error)}")
 
         # Delete from database
-        db.delete(photo)
-        db.commit()
+        delete_response = supabase.table('photos').delete().eq('id', photo_id).execute()
 
         return {"message": "Photo deleted successfully"}
 

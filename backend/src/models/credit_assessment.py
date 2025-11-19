@@ -1,4 +1,5 @@
-from sqlalchemy import Column, String, Text, Integer, Decimal, ForeignKey, CheckConstraint
+from sqlalchemy import Column, String, Text, Integer, ForeignKey, CheckConstraint
+from sqlalchemy.types import Numeric
 from sqlalchemy.dialects.postgresql import UUID, TIMESTAMP, JSONB
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -15,38 +16,35 @@ class CreditAssessment(Base):
     loan_id = Column(UUID(as_uuid=True), ForeignKey('loans.id'))
 
     # ML Model Scores
-    ml_baseline_score = Column(Decimal(5, 2), nullable=False)
+    ml_baseline_score = Column(Numeric(5, 2), nullable=False)
     ml_model_version = Column(String(50))
     ml_features_used = Column(JSONB)
 
     # Gemini Vision Contribution
-    vision_score_adjustment = Column(Decimal(5, 2), default=0)
-    vision_confidence = Column(Decimal(3, 2))
+    vision_score_adjustment = Column(Numeric(5, 2), default=0)
+    vision_confidence = Column(Numeric(3, 2))
     vision_insights = Column(JSONB)
 
     # Gemini NLP Contribution
-    nlp_score_adjustment = Column(Decimal(5, 2), default=0)
-    nlp_confidence = Column(Decimal(3, 2))
+    nlp_score_adjustment = Column(Numeric(5, 2), default=0)
+    nlp_confidence = Column(Numeric(3, 2))
     nlp_insights = Column(JSONB)
 
     # Final Adaptive Score
-    final_credit_score = Column(Decimal(5, 2), nullable=False,
-                               CheckConstraint('final_credit_score BETWEEN 0 AND 100'))
-    risk_category = Column(String(50), nullable=False,
-                         CheckConstraint("risk_category IN ('low', 'medium', 'high', 'very_high')"))
+    final_credit_score = Column(Numeric(5, 2), CheckConstraint('final_credit_score BETWEEN 0 AND 100'), nullable=False)
+    risk_category = Column(String(50), CheckConstraint("risk_category IN ('low', 'medium', 'high', 'very_high')"), nullable=False)
 
     # Income Validation
-    claimed_income = Column(Decimal(12, 2))
-    ai_estimated_income = Column(Decimal(12, 2))
-    income_consistency_score = Column(Decimal(5, 2),
-                                     CheckConstraint('income_consistency_score BETWEEN 0 AND 100'))
-    income_variance_percentage = Column(Decimal(5, 2))
+    claimed_income = Column(Numeric(12, 2))
+    ai_estimated_income = Column(Numeric(12, 2))
+    income_consistency_score = Column(Numeric(5, 2), CheckConstraint('income_consistency_score BETWEEN 0 AND 100'))
+    income_variance_percentage = Column(Numeric(5, 2))
 
     # Loan Recommendation
-    recommended_loan_amount = Column(Decimal(12, 2))
-    max_safe_loan_amount = Column(Decimal(12, 2))
+    recommended_loan_amount = Column(Numeric(12, 2))
+    max_safe_loan_amount = Column(Numeric(12, 2))
     recommended_term_weeks = Column(Integer)
-    recommendation_confidence = Column(Decimal(3, 2))
+    recommendation_confidence = Column(Numeric(3, 2))
 
     # Risk Explanation
     risk_explanation = Column(Text)
