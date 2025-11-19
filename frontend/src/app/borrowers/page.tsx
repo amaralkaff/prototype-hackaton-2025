@@ -58,10 +58,17 @@ export default function BorrowersPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Borrowers</CardTitle>
-            <CardDescription>
-              View and manage all borrower profiles
-            </CardDescription>
+            <div className="flex justify-between items-start">
+              <div>
+                <CardTitle>Borrowers</CardTitle>
+                <CardDescription>
+                  View and manage all borrower profiles
+                </CardDescription>
+              </div>
+              <Link href="/borrowers/new">
+                <Button>+ Create Borrower</Button>
+              </Link>
+            </div>
           </CardHeader>
           <CardContent>
             <div className="mb-6">
