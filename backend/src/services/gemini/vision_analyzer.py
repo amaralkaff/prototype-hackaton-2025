@@ -2,6 +2,7 @@ import google.generativeai as genai
 from typing import Dict, Optional
 import json
 from pathlib import Path
+import httpx
 
 from utils.config import get_settings
 from utils.logger import logger
@@ -16,6 +17,28 @@ class GeminiVisionAnalyzer:
         self.api_key = api_key or settings.GOOGLE_API_KEY
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel(settings.GEMINI_VISION_MODEL)
+
+    async def _load_image(self, image_source: str) -> bytes:
+        """
+        Load image from local path or URL
+
+        Args:
+            image_source: Either a local file path or HTTP(S) URL
+
+        Returns:
+            Image bytes
+        """
+        # Check if it's a URL
+        if image_source.startswith(('http://', 'https://')):
+            logger.info(f"Downloading image from URL: {image_source}")
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                response = await client.get(image_source)
+                response.raise_for_status()
+                return response.content
+        else:
+            # Load from local path
+            logger.info(f"Loading image from local path: {image_source}")
+            return Path(image_source).read_bytes()
 
     async def analyze_business_photo(self, image_path: str, photo_type: str, borrower_context: Dict = None) -> Dict:
         """
@@ -41,8 +64,8 @@ class GeminiVisionAnalyzer:
         try:
             prompt = self._build_business_photo_prompt(photo_type, borrower_context)
 
-            # Load image
-            image_data = Path(image_path).read_bytes()
+            # Load image from URL or local path
+            image_data = await self._load_image(image_path)
 
             # Generate analysis
             response = self.model.generate_content([
@@ -78,8 +101,8 @@ class GeminiVisionAnalyzer:
         try:
             prompt = self._build_house_photo_prompt(photo_type, borrower_context)
 
-            # Load image
-            image_data = Path(image_path).read_bytes()
+            # Load image from URL or local path
+            image_data = await self._load_image(image_path)
 
             # Generate analysis
             response = self.model.generate_content([

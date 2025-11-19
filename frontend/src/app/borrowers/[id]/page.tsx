@@ -3,36 +3,42 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { borrowersAPI } from "@/lib/api";
+import { borrowersAPI, photosAPI } from "@/lib/api";
 import type { BorrowerSummary } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import PhotoUpload from "@/components/PhotoUpload";
 
 export default function BorrowerDetailPage() {
   const params = useParams();
   const borrowerId = params.id as string;
   const [summary, setSummary] = useState<BorrowerSummary | null>(null);
+  const [photos, setPhotos] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    async function fetchBorrowerSummary() {
-      try {
-        setLoading(true);
-        const data = await borrowersAPI.summary(borrowerId);
-        setSummary(data);
-        setError(null);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to fetch borrower details");
-      } finally {
-        setLoading(false);
-      }
+  const fetchBorrowerData = async () => {
+    try {
+      setLoading(true);
+      const [summaryData, photosData] = await Promise.all([
+        borrowersAPI.summary(borrowerId),
+        photosAPI.list(borrowerId).catch(() => []),
+      ]);
+      setSummary(summaryData);
+      setPhotos(photosData);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to fetch borrower details");
+    } finally {
+      setLoading(false);
     }
+  };
 
+  useEffect(() => {
     if (borrowerId) {
-      fetchBorrowerSummary();
+      fetchBorrowerData();
     }
   }, [borrowerId]);
 
@@ -75,7 +81,7 @@ export default function BorrowerDetailPage() {
     );
   }
 
-  const { borrower, loans, photos, field_notes, credit_assessments } = summary;
+  const { borrower, loans, field_notes, credit_assessments } = summary;
 
   return (
     <div className="min-h-screen bg-background">
@@ -209,20 +215,15 @@ export default function BorrowerDetailPage() {
             </CardContent>
           </Card>
 
+          {/* Photo Upload Section */}
+          <PhotoUpload
+            borrowerId={borrowerId}
+            photos={photos}
+            onUploadSuccess={fetchBorrowerData}
+          />
+
           {/* Additional Information Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Photos ({photos.total})</CardTitle>
-              </CardHeader>
-              <CardContent>
-                {photos.total === 0 ? (
-                  <p className="text-sm text-muted-foreground">No photos uploaded</p>
-                ) : (
-                  <p className="text-sm">{photos.total} photo(s) available for analysis</p>
-                )}
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-6">
 
             <Card>
               <CardHeader>

@@ -7,7 +7,7 @@ from utils.config import get_settings
 from utils.logger import setup_logger
 
 # Import API routes
-from api.v1.routes import borrowers, loans, credit_scoring
+from api.v1.routes import borrowers, loans, credit_scoring, photos
 
 settings = get_settings()
 logger = setup_logger(settings.LOG_FILE, settings.LOG_LEVEL)
@@ -87,6 +87,7 @@ async def api_info():
 app.include_router(borrowers.router, prefix=settings.API_V1_PREFIX)
 app.include_router(loans.router, prefix=settings.API_V1_PREFIX)
 app.include_router(credit_scoring.router, prefix=settings.API_V1_PREFIX)
+app.include_router(photos.router, prefix=settings.API_V1_PREFIX)
 
 
 # Global exception handler
