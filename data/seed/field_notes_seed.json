@@ -1,0 +1,1142 @@
+[
+  {
+    "id": 1,
+    "borrower_id": 1,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-26",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat ramai dengan pelanggan tetap. Ibu Usyi menjelaskan omzet harian sekitar Rp 151,802, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,821,620 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin renovasi warung dan tambah rak display.",
+    "field_agent_name": "Bapak Tgk. Puspa Hakim, M.Farm",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 2,
+    "borrower_id": 2,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-10",
+    "note_text": "Pertemuan dengan Ibu Victoria di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 11.1 tahun dengan pelanggan yang lumayan stabil. Pendidikan D3, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih tidak ada tanggungan sekolah. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Slamet Samosir",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 3,
+    "borrower_id": 2,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-08",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Victoria Tampubolon. Usaha terletak di Desa Bojongsoang, Garut. Ibu Victoria menceritakan penghasilan sekitar Rp 3,070,051 per bulan atau sekitar Rp 102,335 per hari. Sudah menjalankan usaha selama 11.1 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 0 tanggungan anak.",
+    "field_agent_name": "Ibu Luthfi Waluyo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 4,
+    "borrower_id": 3,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-08",
+    "note_text": "Pertemuan dengan Ibu Novi di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 7.8 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Janet Saefullah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 5,
+    "borrower_id": 3,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-08",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Novi Maheswara. Usaha terletak di Desa Sukamaju, Garut. Ibu Novi menceritakan penghasilan sekitar Rp 4,351,406 per bulan atau sekitar Rp 145,047 per hari. Sudah menjalankan usaha selama 7.8 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 5 tanggungan anak.",
+    "field_agent_name": "Bapak Ira Wijaya, M.TI.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 6,
+    "borrower_id": 4,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-08-27",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Hesti Prasetyo. Usaha terletak di Desa Rancaekek, Cianjur. Ibu Hesti menceritakan penghasilan sekitar Rp 4,039,505 per bulan atau sekitar Rp 134,650 per hari. Sudah menjalankan usaha selama 6.9 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Ibu Ina Prasetyo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 7,
+    "borrower_id": 5,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-25",
+    "note_text": "Pertemuan dengan Ibu Nurul di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 0.7 tahun dengan pelanggan tetap dan loyal. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Dr. Anastasia Lazuardi",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 8,
+    "borrower_id": 6,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-03",
+    "note_text": "Pertemuan dengan Ibu Aisyah di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 6.6 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak Ir. Dasa Saputra",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 9,
+    "borrower_id": 6,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-07",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Aisyah Susanti. Usaha terletak di Desa Margahayu, Garut. Ibu Aisyah menceritakan penghasilan sekitar Rp 4,406,721 per bulan atau sekitar Rp 146,891 per hari. Sudah menjalankan usaha selama 6.6 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Ibu Mila Budiyanto",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 10,
+    "borrower_id": 7,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-02",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat sepi tapi stabil. Ibu Elma menjelaskan omzet harian sekitar Rp 114,598, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,375,179 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin beli kulkas untuk nyetok minuman dingin.",
+    "field_agent_name": "Bapak Erik Saragih, S.Kom",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 11,
+    "borrower_id": 7,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-15",
+    "note_text": "Pertemuan dengan Ibu Elma di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 4.3 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak Putri Gunawan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 12,
+    "borrower_id": 8,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-20",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat ramai dengan pelanggan tetap. Ibu Olivia menjelaskan omzet harian sekitar Rp 106,906, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,282,878 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin beli kulkas untuk nyetok minuman dingin.",
+    "field_agent_name": "Ibu Uchita Firgantoro",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 13,
+    "borrower_id": 9,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-15",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat sepi tapi stabil. Ibu Ida menjelaskan omzet harian sekitar Rp 114,317, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,371,800 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin tambah stok barang dagangan.",
+    "field_agent_name": "Bapak Dalima Haryanti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 14,
+    "borrower_id": 10,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-22",
+    "note_text": "Pertemuan dengan Ibu Mila di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 5.1 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Gilda Kusmawati",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 15,
+    "borrower_id": 11,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-05",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat ramai dengan pelanggan tetap. Ibu Kayla menjelaskan omzet harian sekitar Rp 163,879, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,966,550 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin tambah stok barang dagangan.",
+    "field_agent_name": "Ibu Bajragin Haryanto",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 16,
+    "borrower_id": 11,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-08-25",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat sepi tapi stabil. Ibu Kayla menjelaskan omzet harian sekitar Rp 163,879, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,966,550 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin beli kulkas untuk nyetok minuman dingin.",
+    "field_agent_name": "Bapak Septi Mardhiyah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 17,
+    "borrower_id": 12,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-07",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Laras Situmorang. Usaha terletak di Desa Margahayu, Sumedang. Ibu Laras menceritakan penghasilan sekitar Rp 4,299,826 per bulan atau sekitar Rp 143,328 per hari. Sudah menjalankan usaha selama 14.8 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 1 tanggungan anak.",
+    "field_agent_name": "Bapak Zulaikha Siregar",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 18,
+    "borrower_id": 12,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-12",
+    "note_text": "Pertemuan dengan Ibu Laras di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 14.8 tahun dengan pelanggan tetap dan loyal. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Salsabila Melani",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 19,
+    "borrower_id": 13,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-01",
+    "note_text": "Pertemuan dengan Ibu Aisyah di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 14.4 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Paulin Hariyah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 20,
+    "borrower_id": 13,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-30",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Aisyah Budiyanto. Usaha terletak di Desa Rancaekek, Garut. Ibu Aisyah menceritakan penghasilan sekitar Rp 3,704,652 per bulan atau sekitar Rp 123,488 per hari. Sudah menjalankan usaha selama 14.4 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Bapak Devi Rahmawati, S.Ked",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 21,
+    "borrower_id": 14,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-07",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Citra Simbolon. Usaha terletak di Desa Sukamaju, Cianjur. Ibu Citra menceritakan penghasilan sekitar Rp 4,710,175 per bulan atau sekitar Rp 157,006 per hari. Sudah menjalankan usaha selama 7.1 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 0 tanggungan anak.",
+    "field_agent_name": "Ibu Diah Hakim",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 22,
+    "borrower_id": 14,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-28",
+    "note_text": "Observasi bisnis Warung Kelontong (Small Shop). Usaha terlihat ramai dengan pelanggan tetap. Ibu Citra menjelaskan omzet harian sekitar Rp 157,006, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,884,070 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin tambah stok barang dagangan.",
+    "field_agent_name": "Bapak Yance Habibi",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 23,
+    "borrower_id": 15,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-08-31",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Ellis Mayasari. Usaha terletak di Desa Margahayu, Garut. Ibu Ellis menceritakan penghasilan sekitar Rp 4,624,572 per bulan atau sekitar Rp 154,152 per hari. Sudah menjalankan usaha selama 11.4 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 0 tanggungan anak.",
+    "field_agent_name": "Ibu Putri Puspita",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 24,
+    "borrower_id": 16,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-24",
+    "note_text": "Pertemuan dengan Ibu Wani di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 7.9 tahun dengan pelanggan tetap dan loyal. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Rusman Widodo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 25,
+    "borrower_id": 17,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-03",
+    "note_text": "Pertemuan dengan Ibu Ulya di rumah yang juga jadi tempat usaha Warung Kelontong (Small Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 7.4 tahun dengan pelanggan tetap dan loyal. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Drs. Dian Wastuti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 26,
+    "borrower_id": 18,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-03",
+    "note_text": "Kunjungan ke usaha Warung Kelontong (Small Shop) milik Ibu Alika Prabowo. Usaha terletak di Desa Cikalong, Bandung. Ibu Alika menceritakan penghasilan sekitar Rp 3,103,250 per bulan atau sekitar Rp 103,442 per hari. Sudah menjalankan usaha selama 2.7 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak Ir. Cakrawangsa Permata",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 27,
+    "borrower_id": 19,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-19",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Paramita menjelaskan omzet harian sekitar Rp 93,552, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,122,621 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal beli tepung dan minyak goreng.",
+    "field_agent_name": "Bapak Kenari Laksita",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 28,
+    "borrower_id": 19,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-03",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Paramita menjelaskan omzet harian sekitar Rp 93,552, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,122,621 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin beli kompor gas baru dan wajan besar.",
+    "field_agent_name": "Ibu Tania Kusmawati",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 29,
+    "borrower_id": 20,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-15",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Winda Maryati. Usaha terletak di Desa Bojongsoang, Garut. Ibu Winda menceritakan penghasilan sekitar Rp 2,488,251 per bulan atau sekitar Rp 82,942 per hari. Sudah menjalankan usaha selama 6.1 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 4 tanggungan anak.",
+    "field_agent_name": "Ibu Banara Prayoga",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 30,
+    "borrower_id": 21,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-07",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Eli Wastuti. Usaha terletak di Desa Sukamaju, Majalengka. Ibu Eli menceritakan penghasilan sekitar Rp 2,294,201 per bulan atau sekitar Rp 76,473 per hari. Sudah menjalankan usaha selama 13.7 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 2 tanggungan anak.",
+    "field_agent_name": "Ibu dr. Paiman Mahendra, S.IP",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 31,
+    "borrower_id": 22,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-28",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Febi menjelaskan omzet harian sekitar Rp 72,304, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 867,646 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha ada yang perlu diganti. Rencana ingin modal beli tepung dan minyak goreng.",
+    "field_agent_name": "Bapak drg. Tugiman Napitupulu",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 32,
+    "borrower_id": 22,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-06",
+    "note_text": "Pertemuan dengan Ibu Febi di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 5.2 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Ibu Nova Hutagalung",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 33,
+    "borrower_id": 23,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-23",
+    "note_text": "Pertemuan dengan Ibu Bella di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 8.6 tahun dengan pelanggan yang lumayan stabil. Pendidikan D3, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih tidak ada tanggungan sekolah. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Dt. Ian Simanjuntak",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 34,
+    "borrower_id": 23,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-20",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat sepi tapi stabil. Ibu Bella menjelaskan omzet harian sekitar Rp 93,203, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,118,431 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin beli gerobak untuk jualan keliling.",
+    "field_agent_name": "Ibu Vivi Yuniar, M.Kom.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 35,
+    "borrower_id": 24,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-08-30",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Agnes menjelaskan omzet harian sekitar Rp 92,887, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,114,642 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin beli kompor gas baru dan wajan besar.",
+    "field_agent_name": "Bapak Lasmono Mahendra",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 36,
+    "borrower_id": 24,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-27",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat sepi tapi stabil. Ibu Agnes menjelaskan omzet harian sekitar Rp 92,887, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,114,642 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha ada yang perlu diganti. Rencana ingin beli kompor gas baru dan wajan besar.",
+    "field_agent_name": "Ibu Rizki Suartini",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 37,
+    "borrower_id": 25,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-07",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Juli Prakasa. Usaha terletak di Desa Rancaekek, Cianjur. Ibu Juli menceritakan penghasilan sekitar Rp 2,366,179 per bulan atau sekitar Rp 78,873 per hari. Sudah menjalankan usaha selama 12.3 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Ibu R. Arta Ramadan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 38,
+    "borrower_id": 25,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-06",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Juli Prakasa. Usaha terletak di Desa Rancaekek, Cianjur. Ibu Juli menceritakan penghasilan sekitar Rp 2,366,179 per bulan atau sekitar Rp 78,873 per hari. Sudah menjalankan usaha selama 12.3 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 3 tanggungan anak.",
+    "field_agent_name": "Ibu Citra Pratama",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 39,
+    "borrower_id": 26,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-08-29",
+    "note_text": "Pertemuan dengan Ibu Vanesa di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 7.2 tahun dengan pelanggan yang lumayan stabil. Pendidikan D3, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Rini Zulkarnain",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 40,
+    "borrower_id": 26,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-23",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Vanesa Utami. Usaha terletak di Desa Rancaekek, Majalengka. Ibu Vanesa menceritakan penghasilan sekitar Rp 2,659,090 per bulan atau sekitar Rp 88,636 per hari. Sudah menjalankan usaha selama 7.2 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja membantu usaha. Punya 5 tanggungan anak.",
+    "field_agent_name": "Bapak Ganjaran Yulianti, S.Kom",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 41,
+    "borrower_id": 27,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-06",
+    "note_text": "Pertemuan dengan Ibu Ellis di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 10.3 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak Qori Nainggolan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 42,
+    "borrower_id": 27,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-08",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Ellis menjelaskan omzet harian sekitar Rp 90,825, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,089,897 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin beli gerobak untuk jualan keliling.",
+    "field_agent_name": "Bapak Soleh Irawan, S.Farm",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 43,
+    "borrower_id": 28,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-05",
+    "note_text": "Pertemuan dengan Ibu Novi di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 8.6 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Ibun Kuswandari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 44,
+    "borrower_id": 28,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-15",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Novi Hastuti. Usaha terletak di Desa Sindanglaya, Tasikmalaya. Ibu Novi menceritakan penghasilan sekitar Rp 2,968,048 per bulan atau sekitar Rp 98,935 per hari. Sudah menjalankan usaha selama 8.6 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Bapak Jumari Palastri",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 45,
+    "borrower_id": 29,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-17",
+    "note_text": "Observasi bisnis Warung Gorengan (Fried Snacks Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Ilsa menjelaskan omzet harian sekitar Rp 90,932, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,091,188 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin modal beli tepung dan minyak goreng.",
+    "field_agent_name": "Bapak Dasa Suryatmi",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 46,
+    "borrower_id": 29,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-30",
+    "note_text": "Kunjungan ke usaha Warung Gorengan (Fried Snacks Stall) milik Ibu Ilsa Simanjuntak. Usaha terletak di Desa Cikalong, Tasikmalaya. Ibu Ilsa menceritakan penghasilan sekitar Rp 2,727,969 per bulan atau sekitar Rp 90,932 per hari. Sudah menjalankan usaha selama 3.5 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 5 tanggungan anak.",
+    "field_agent_name": "Bapak R. Karimah Waluyo, S.IP",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 47,
+    "borrower_id": 30,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-12",
+    "note_text": "Kunjungan ke usaha Jahit Pakaian (Tailoring) milik Ibu Gina Handayani. Usaha terletak di Desa Sindanglaya, Sumedang. Ibu Gina menceritakan penghasilan sekitar Rp 3,875,969 per bulan atau sekitar Rp 129,199 per hari. Sudah menjalankan usaha selama 1.1 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 1 tanggungan anak.",
+    "field_agent_name": "Ibu Eja Anggriawan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 48,
+    "borrower_id": 31,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-25",
+    "note_text": "Kunjungan ke usaha Jahit Pakaian (Tailoring) milik Ibu Mila Mandasari. Usaha terletak di Desa Cipanas, Garut. Ibu Mila menceritakan penghasilan sekitar Rp 2,839,573 per bulan atau sekitar Rp 94,652 per hari. Sudah menjalankan usaha selama 8.6 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 2 tanggungan anak.",
+    "field_agent_name": "Bapak Harimurti Saefullah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 49,
+    "borrower_id": 31,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-10",
+    "note_text": "Kunjungan ke usaha Jahit Pakaian (Tailoring) milik Ibu Mila Mandasari. Usaha terletak di Desa Cipanas, Garut. Ibu Mila menceritakan penghasilan sekitar Rp 2,839,573 per bulan atau sekitar Rp 94,652 per hari. Sudah menjalankan usaha selama 8.6 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 2 tanggungan anak.",
+    "field_agent_name": "Ibu Wirda Salahudin",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 50,
+    "borrower_id": 32,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-04",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat sepi tapi stabil. Ibu Farah menjelaskan omzet harian sekitar Rp 86,458, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,037,491 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin renovasi ruang jahit supaya lebih luas.",
+    "field_agent_name": "Ibu Pia Nainggolan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 51,
+    "borrower_id": 32,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-02",
+    "note_text": "Kunjungan ke usaha Jahit Pakaian (Tailoring) milik Ibu Farah Manullang. Usaha terletak di Desa Rancaekek, Cianjur. Ibu Farah menceritakan penghasilan sekitar Rp 2,593,727 per bulan atau sekitar Rp 86,458 per hari. Sudah menjalankan usaha selama 10.9 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 5 tanggungan anak.",
+    "field_agent_name": "Bapak Mila Wibisono",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 52,
+    "borrower_id": 33,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-24",
+    "note_text": "Pertemuan dengan Ibu Uli di rumah yang juga jadi tempat usaha Jahit Pakaian (Tailoring). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 2.3 tahun dengan pelanggan yang lumayan stabil. Pendidikan D3, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak R.A. Paris Novitasari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 53,
+    "borrower_id": 34,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-28",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat sepi tapi stabil. Ibu Hilda menjelaskan omzet harian sekitar Rp 122,410, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,468,922 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal beli kain dan aksesoris jahit.",
+    "field_agent_name": "Ibu Asman Wastuti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 54,
+    "borrower_id": 35,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-08-27",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat sepi tapi stabil. Ibu Zaenab menjelaskan omzet harian sekitar Rp 114,031, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,368,377 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin renovasi ruang jahit supaya lebih luas.",
+    "field_agent_name": "Bapak Icha Setiawan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 55,
+    "borrower_id": 36,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-27",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat ramai dengan pelanggan tetap. Ibu Elma menjelaskan omzet harian sekitar Rp 91,953, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,103,432 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin beli mesin jahit portable listrik.",
+    "field_agent_name": "Ibu Malika Setiawan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 56,
+    "borrower_id": 36,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-19",
+    "note_text": "Pertemuan dengan Ibu Elma di rumah yang juga jadi tempat usaha Jahit Pakaian (Tailoring). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 8.4 tahun dengan pelanggan tetap dan loyal. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu T. Hartaka Halimah, S.E.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 57,
+    "borrower_id": 37,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-17",
+    "note_text": "Pertemuan dengan Ibu Yulia di rumah yang juga jadi tempat usaha Jahit Pakaian (Tailoring). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 4.4 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Cawuk Jailani",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 58,
+    "borrower_id": 38,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-12",
+    "note_text": "Pertemuan dengan Ibu Zelda di rumah yang juga jadi tempat usaha Jahit Pakaian (Tailoring). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 11.3 tahun dengan pelanggan tetap dan loyal. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Saiful Latupono",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 59,
+    "borrower_id": 39,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-10",
+    "note_text": "Kunjungan ke usaha Jualan Sayur (Vegetable Vendor) milik Ibu Vera Thamrin. Usaha terletak di Desa Sukamaju, Majalengka. Ibu Vera menceritakan penghasilan sekitar Rp 1,775,539 per bulan atau sekitar Rp 59,185 per hari. Sudah menjalankan usaha selama 8.7 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 0 tanggungan anak.",
+    "field_agent_name": "Ibu Prayoga Sudiati",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 60,
+    "borrower_id": 39,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-14",
+    "note_text": "Observasi bisnis Jualan Sayur (Vegetable Vendor). Usaha terlihat ramai dengan pelanggan tetap. Ibu Vera menjelaskan omzet harian sekitar Rp 59,185, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 710,216 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin beli gerobak dan timbangan digital.",
+    "field_agent_name": "Bapak Tgk. Timbul Astuti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 61,
+    "borrower_id": 40,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-05",
+    "note_text": "Kunjungan ke usaha Jualan Sayur (Vegetable Vendor) milik Ibu Malika Wacana. Usaha terletak di Desa Sindanglaya, Cianjur. Ibu Malika menceritakan penghasilan sekitar Rp 1,869,406 per bulan atau sekitar Rp 62,314 per hari. Sudah menjalankan usaha selama 12.1 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak Gasti Manullang, S.Pd",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 62,
+    "borrower_id": 41,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-17",
+    "note_text": "Pertemuan dengan Ibu Jelita di rumah yang juga jadi tempat usaha Jualan Sayur (Vegetable Vendor). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 5.2 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu drg. Ghaliyati Megantara",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 63,
+    "borrower_id": 41,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-14",
+    "note_text": "Pertemuan dengan Ibu Jelita di rumah yang juga jadi tempat usaha Jualan Sayur (Vegetable Vendor). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 5.2 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak KH. Cakrabuana Uyainah, S.Pd",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 64,
+    "borrower_id": 42,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-28",
+    "note_text": "Observasi bisnis Jualan Sayur (Vegetable Vendor). Usaha terlihat sepi tapi stabil. Ibu Kezia menjelaskan omzet harian sekitar Rp 52,876, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 634,509 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal beli sayuran dalam jumlah besar.",
+    "field_agent_name": "Bapak Cakrawangsa Puspasari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 65,
+    "borrower_id": 42,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-28",
+    "note_text": "Kunjungan ke usaha Jualan Sayur (Vegetable Vendor) milik Ibu Kezia Sihombing. Usaha terletak di Desa Cikalong, Cianjur. Ibu Kezia menceritakan penghasilan sekitar Rp 1,586,273 per bulan atau sekitar Rp 52,876 per hari. Sudah menjalankan usaha selama 13.6 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 2 tanggungan anak.",
+    "field_agent_name": "Ibu Ir. Raisa Putra, M.TI.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 66,
+    "borrower_id": 43,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-08-24",
+    "note_text": "Pertemuan dengan Ibu Zelaya di rumah yang juga jadi tempat usaha Jualan Sayur (Vegetable Vendor). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 2.3 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Darmaji Yulianti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 67,
+    "borrower_id": 43,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-14",
+    "note_text": "Pertemuan dengan Ibu Zelaya di rumah yang juga jadi tempat usaha Jualan Sayur (Vegetable Vendor). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 2.3 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Ibu Garda Widiastuti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 68,
+    "borrower_id": 44,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-22",
+    "note_text": "Pertemuan dengan Ibu Elisa di rumah yang juga jadi tempat usaha Jualan Sayur (Vegetable Vendor). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 4.1 tahun dengan pelanggan tetap dan loyal. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak KH. Alambana Firmansyah, S.Farm",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 69,
+    "borrower_id": 44,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-12",
+    "note_text": "Observasi bisnis Jualan Sayur (Vegetable Vendor). Usaha terlihat ramai dengan pelanggan tetap. Ibu Elisa menjelaskan omzet harian sekitar Rp 78,412, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 940,946 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal beli sayuran dalam jumlah besar.",
+    "field_agent_name": "Ibu Kasusra Handayani",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 70,
+    "borrower_id": 45,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-17",
+    "note_text": "Observasi bisnis Jualan Sayur (Vegetable Vendor). Usaha terlihat sepi tapi stabil. Ibu Hesti menjelaskan omzet harian sekitar Rp 58,306, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 699,666 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin beli gerobak dan timbangan digital.",
+    "field_agent_name": "Ibu Rusman Mahendra",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 71,
+    "borrower_id": 46,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-15",
+    "note_text": "Kunjungan ke usaha Usaha Catering Rumahan (Home Catering) milik Ibu Tami Uwais. Usaha terletak di Desa Bojongsoang, Majalengka. Ibu Tami menceritakan penghasilan sekitar Rp 3,862,765 per bulan atau sekitar Rp 128,759 per hari. Sudah menjalankan usaha selama 3.7 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak Ayu Haryanti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 72,
+    "borrower_id": 46,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-03",
+    "note_text": "Observasi bisnis Usaha Catering Rumahan (Home Catering). Usaha terlihat sepi tapi stabil. Ibu Tami menjelaskan omzet harian sekitar Rp 128,759, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,545,106 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal bahan baku untuk pesanan event.",
+    "field_agent_name": "Bapak Carub Nasyidah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 73,
+    "borrower_id": 47,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-24",
+    "note_text": "Kunjungan ke usaha Usaha Catering Rumahan (Home Catering) milik Ibu Carla Wahyuni. Usaha terletak di Desa Bojongsoang, Garut. Ibu Carla menceritakan penghasilan sekitar Rp 4,062,631 per bulan atau sekitar Rp 135,421 per hari. Sudah menjalankan usaha selama 14.5 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja membantu usaha. Punya 4 tanggungan anak.",
+    "field_agent_name": "Ibu dr. Intan Permadi, S.Sos",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 74,
+    "borrower_id": 48,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-19",
+    "note_text": "Pertemuan dengan Ibu Tira di rumah yang juga jadi tempat usaha Usaha Catering Rumahan (Home Catering). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 13.6 tahun dengan pelanggan tetap dan loyal. Pendidikan D3, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Soleh Simbolon",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 75,
+    "borrower_id": 48,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-10",
+    "note_text": "Observasi bisnis Usaha Catering Rumahan (Home Catering). Usaha terlihat ramai dengan pelanggan tetap. Ibu Tira menjelaskan omzet harian sekitar Rp 115,541, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,386,494 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin beli kulkas freezer untuk stok bahan.",
+    "field_agent_name": "Bapak Shakila Salahudin",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 76,
+    "borrower_id": 49,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-26",
+    "note_text": "Kunjungan ke usaha Usaha Catering Rumahan (Home Catering) milik Ibu Wulan Kuswoyo. Usaha terletak di Desa Margahayu, Majalengka. Ibu Wulan menceritakan penghasilan sekitar Rp 5,024,839 per bulan atau sekitar Rp 167,495 per hari. Sudah menjalankan usaha selama 5.1 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 0 tanggungan anak.",
+    "field_agent_name": "Bapak Zahra Novitasari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 77,
+    "borrower_id": 49,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-03",
+    "note_text": "Observasi bisnis Usaha Catering Rumahan (Home Catering). Usaha terlihat sepi tapi stabil. Ibu Wulan menjelaskan omzet harian sekitar Rp 167,495, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 2,009,936 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin beli peralatan masak dan panci besar.",
+    "field_agent_name": "Ibu Cut Yani Najmudin",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 78,
+    "borrower_id": 50,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-17",
+    "note_text": "Pertemuan dengan Ibu Diah di rumah yang juga jadi tempat usaha Usaha Catering Rumahan (Home Catering). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 10.1 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak Dt. Bakiman Pradipta, S.E.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 79,
+    "borrower_id": 50,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-18",
+    "note_text": "Pertemuan dengan Ibu Diah di rumah yang juga jadi tempat usaha Usaha Catering Rumahan (Home Catering). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 10.1 tahun dengan pelanggan tetap dan loyal. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak R. Cakrabirawa Sitompul",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 80,
+    "borrower_id": 51,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-17",
+    "note_text": "Pertemuan dengan Ibu Uli di rumah yang juga jadi tempat usaha Usaha Catering Rumahan (Home Catering). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 1.8 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Puput Suryatmi",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 81,
+    "borrower_id": 51,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-08-28",
+    "note_text": "Kunjungan ke usaha Usaha Catering Rumahan (Home Catering) milik Ibu Uli Putra. Usaha terletak di Desa Margahayu, Cianjur. Ibu Uli menceritakan penghasilan sekitar Rp 5,089,297 per bulan atau sekitar Rp 169,643 per hari. Sudah menjalankan usaha selama 1.8 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 3 tanggungan anak.",
+    "field_agent_name": "Bapak Bagya Wulandari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 82,
+    "borrower_id": 52,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-04",
+    "note_text": "Kunjungan ke usaha Salon Rumahan (Home Salon) milik Ibu Eva Widiastuti. Usaha terletak di Desa Bojongsoang, Majalengka. Ibu Eva menceritakan penghasilan sekitar Rp 2,362,705 per bulan atau sekitar Rp 78,757 per hari. Sudah menjalankan usaha selama 11.0 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja membantu usaha. Punya 5 tanggungan anak.",
+    "field_agent_name": "Ibu Asmianto Wastuti",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 83,
+    "borrower_id": 53,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-17",
+    "note_text": "Observasi bisnis Salon Rumahan (Home Salon). Usaha terlihat sepi tapi stabil. Ibu Malika menjelaskan omzet harian sekitar Rp 81,063, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 972,756 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Bapak Kasiran Sitorus",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 84,
+    "borrower_id": 54,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-13",
+    "note_text": "Observasi bisnis Salon Rumahan (Home Salon). Usaha terlihat sepi tapi stabil. Ibu Maimunah menjelaskan omzet harian sekitar Rp 124,411, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,492,932 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Bapak R. Opan Situmorang",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 85,
+    "borrower_id": 55,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-11",
+    "note_text": "Pertemuan dengan Ibu Rahmi di rumah yang juga jadi tempat usaha Salon Rumahan (Home Salon). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 6.2 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Ibu Violet Nainggolan",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 86,
+    "borrower_id": 56,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-11",
+    "note_text": "Kunjungan ke usaha Salon Rumahan (Home Salon) milik Ibu Karimah Pranowo. Usaha terletak di Desa Cipanas, Tasikmalaya. Ibu Karimah menceritakan penghasilan sekitar Rp 2,673,206 per bulan atau sekitar Rp 89,107 per hari. Sudah menjalankan usaha selama 4.3 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 5 tanggungan anak.",
+    "field_agent_name": "Ibu drg. Calista Maheswara",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 87,
+    "borrower_id": 57,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-25",
+    "note_text": "Observasi bisnis Toko Pulsa & Aksesoris HP (Mobile Shop). Usaha terlihat sepi tapi stabil. Ibu Dinda menjelaskan omzet harian sekitar Rp 101,445, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,217,341 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu Purwa Santoso",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 88,
+    "borrower_id": 57,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-21",
+    "note_text": "Pertemuan dengan Ibu Dinda di rumah yang juga jadi tempat usaha Toko Pulsa & Aksesoris HP (Mobile Shop). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 11.0 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMA, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Ibu Restu Prabowo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 89,
+    "borrower_id": 58,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-07",
+    "note_text": "Pertemuan dengan Ibu Olivia di rumah yang juga jadi tempat usaha Toko Pulsa & Aksesoris HP (Mobile Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 4.3 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Bapak Zalindra Thamrin",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 90,
+    "borrower_id": 59,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-23",
+    "note_text": "Pertemuan dengan Ibu Olivia di rumah yang juga jadi tempat usaha Toko Pulsa & Aksesoris HP (Mobile Shop). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 3.4 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Febi Sihotang, S.Farm",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 91,
+    "borrower_id": 60,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-03",
+    "note_text": "Observasi bisnis Toko Pulsa & Aksesoris HP (Mobile Shop). Usaha terlihat sepi tapi stabil. Ibu Dian menjelaskan omzet harian sekitar Rp 132,682, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,592,182 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu dr. Budi Hakim",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 92,
+    "borrower_id": 60,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-04",
+    "note_text": "Observasi bisnis Toko Pulsa & Aksesoris HP (Mobile Shop). Usaha terlihat sepi tapi stabil. Ibu Dian menjelaskan omzet harian sekitar Rp 132,682, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,592,182 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Bapak Ika Nugroho",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 93,
+    "borrower_id": 61,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-11-07",
+    "note_text": "Kunjungan ke usaha Warung Nasi/Lauk Pauk (Food Stall) milik Ibu Alika Hariyah. Usaha terletak di Desa Margahayu, Tasikmalaya. Ibu Alika menceritakan penghasilan sekitar Rp 4,277,765 per bulan atau sekitar Rp 142,592 per hari. Sudah menjalankan usaha selama 4.8 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 5 tanggungan anak.",
+    "field_agent_name": "Ibu Dt. Hadi Safitri, M.Farm",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 94,
+    "borrower_id": 62,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-10-13",
+    "note_text": "Observasi bisnis Warung Nasi/Lauk Pauk (Food Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Indah menjelaskan omzet harian sekitar Rp 116,880, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,402,558 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha ada yang perlu diganti. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Bapak Viktor Novitasari",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 95,
+    "borrower_id": 63,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-11-19",
+    "note_text": "Observasi bisnis Warung Nasi/Lauk Pauk (Food Stall). Usaha terlihat sepi tapi stabil. Ibu Kani menjelaskan omzet harian sekitar Rp 155,572, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,866,858 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu Chelsea Riyanti, M.Ak",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 96,
+    "borrower_id": 64,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-15",
+    "note_text": "Observasi bisnis Warung Nasi/Lauk Pauk (Food Stall). Usaha terlihat ramai dengan pelanggan tetap. Ibu Amelia menjelaskan omzet harian sekitar Rp 148,097, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,777,160 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu Raditya Mansur",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 97,
+    "borrower_id": 65,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-09-30",
+    "note_text": "Kunjungan ke usaha Warung Nasi/Lauk Pauk (Food Stall) milik Ibu Paris Gunawan. Usaha terletak di Desa Cipanas, Garut. Ibu Paris menceritakan penghasilan sekitar Rp 3,628,907 per bulan atau sekitar Rp 120,964 per hari. Sudah menjalankan usaha selama 5.9 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja membantu usaha. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak R.A. Vivi Rahimah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 98,
+    "borrower_id": 65,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-09-23",
+    "note_text": "Observasi bisnis Warung Nasi/Lauk Pauk (Food Stall). Usaha terlihat sepi tapi stabil. Ibu Paris menjelaskan omzet harian sekitar Rp 120,964, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,451,563 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu Gangsa Sitorus",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 99,
+    "borrower_id": 66,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-03",
+    "note_text": "Pertemuan dengan Ibu Keisha di rumah yang juga jadi tempat usaha Warung Nasi/Lauk Pauk (Food Stall). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 6.1 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Elvina Pratiwi",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 100,
+    "borrower_id": 66,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-11",
+    "note_text": "Pertemuan dengan Ibu Keisha di rumah yang juga jadi tempat usaha Warung Nasi/Lauk Pauk (Food Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 6.1 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Wardaya Yulianti, S.H.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 101,
+    "borrower_id": 67,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-08-22",
+    "note_text": "Kunjungan ke usaha Warung Nasi/Lauk Pauk (Food Stall) milik Ibu Betania Simbolon. Usaha terletak di Desa Cikalong, Garut. Ibu Betania menceritakan penghasilan sekitar Rp 3,674,506 per bulan atau sekitar Rp 122,484 per hari. Sudah menjalankan usaha selama 2.3 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 3 tanggungan anak.",
+    "field_agent_name": "Bapak Clara Waluyo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 102,
+    "borrower_id": 67,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-10-10",
+    "note_text": "Pertemuan dengan Ibu Betania di rumah yang juga jadi tempat usaha Warung Nasi/Lauk Pauk (Food Stall). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 2.3 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Zahra Rajata",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 103,
+    "borrower_id": 68,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-15",
+    "note_text": "Kunjungan ke usaha Industri Rumahan Kerupuk (Home Snack Industry) milik Ibu Winda Lestari. Usaha terletak di Desa Cikalong, Majalengka. Ibu Winda menceritakan penghasilan sekitar Rp 2,429,608 per bulan atau sekitar Rp 80,987 per hari. Sudah menjalankan usaha selama 13.3 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak Cici Kusmawati",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 104,
+    "borrower_id": 68,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-02",
+    "note_text": "Kunjungan ke usaha Industri Rumahan Kerupuk (Home Snack Industry) milik Ibu Winda Lestari. Usaha terletak di Desa Cikalong, Majalengka. Ibu Winda menceritakan penghasilan sekitar Rp 2,429,608 per bulan atau sekitar Rp 80,987 per hari. Sudah menjalankan usaha selama 13.3 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja membantu usaha. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak KH. Bakianto Prabowo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 105,
+    "borrower_id": 69,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-08",
+    "note_text": "Observasi bisnis Industri Rumahan Kerupuk (Home Snack Industry). Usaha terlihat sepi tapi stabil. Ibu Farah menjelaskan omzet harian sekitar Rp 101,740, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,220,882 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha dalam kondisi baik. Rencana ingin modal usaha dan pengembangan bisnis.",
+    "field_agent_name": "Ibu Patricia Hartati",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 106,
+    "borrower_id": 70,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-17",
+    "note_text": "Kunjungan ke usaha Industri Rumahan Kerupuk (Home Snack Industry) milik Ibu Zaenab Megantara. Usaha terletak di Desa Margahayu, Tasikmalaya. Ibu Zaenab menceritakan penghasilan sekitar Rp 2,963,005 per bulan atau sekitar Rp 98,767 per hari. Sudah menjalankan usaha selama 6.6 tahun. Sudah punya buku catatan sederhana. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja membantu usaha. Punya 0 tanggungan anak.",
+    "field_agent_name": "Bapak Bajragin Prasetyo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 107,
+    "borrower_id": 71,
+    "loan_id": null,
+    "note_type": "business_observation",
+    "visit_date": "2025-09-14",
+    "note_text": "Pertemuan dengan Ibu Indah di rumah yang juga jadi tempat usaha Industri Rumahan Kerupuk (Home Snack Industry). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 11.5 tahun dengan pelanggan yang lumayan stabil. Pendidikan SD, bisa baca tulis dasar. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Agak tertutup tapi mau bekerja sama saat wawancara.",
+    "field_agent_name": "Ibu drg. Safina Hasanah",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 108,
+    "borrower_id": 71,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-11",
+    "note_text": "Kunjungan ke usaha Industri Rumahan Kerupuk (Home Snack Industry) milik Ibu Indah Handayani. Usaha terletak di Desa Sukamaju, Cianjur. Ibu Indah menceritakan penghasilan sekitar Rp 2,706,707 per bulan atau sekitar Rp 90,224 per hari. Sudah menjalankan usaha selama 11.5 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Punya rekening bank. Suami bekerja di tempat lain. Punya 4 tanggungan anak.",
+    "field_agent_name": "Bapak Kartika Rajasa",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 109,
+    "borrower_id": 72,
+    "loan_id": null,
+    "note_type": "initial_visit",
+    "visit_date": "2025-11-14",
+    "note_text": "Kunjungan ke usaha Industri Rumahan Kerupuk (Home Snack Industry) milik Ibu Halima Hardiansyah. Usaha terletak di Desa Sindanglaya, Cianjur. Ibu Halima menceritakan penghasilan sekitar Rp 2,615,332 per bulan atau sekitar Rp 87,178 per hari. Sudah menjalankan usaha selama 5.3 tahun. Belum punya catatan keuangan yang rapi. Sikap kooperatif dan terbuka menceritakan kondisi usaha. Belum punya rekening bank, transaksi masih cash. Suami bekerja di tempat lain. Punya 1 tanggungan anak.",
+    "field_agent_name": "Ibu Kamila Kuswoyo",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 110,
+    "borrower_id": 73,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-08",
+    "note_text": "Pertemuan dengan Ibu Irma di rumah yang juga jadi tempat usaha Industri Rumahan Kerupuk (Home Snack Industry). Rumah cukup layak dengan kondisi terawat. Usaha sudah berjalan 4.0 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan masih perlu bimbingan. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Baktianto Situmorang",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 111,
+    "borrower_id": 74,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-15",
+    "note_text": "Pertemuan dengan Ibu Eli di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 2.0 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Ibu Drs. Waluyo Samosir",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 112,
+    "borrower_id": 74,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-15",
+    "note_text": "Pertemuan dengan Ibu Eli di rumah yang juga jadi tempat usaha Warung Gorengan (Fried Snacks Stall). Rumah sederhana ukuran 6x8 meter, dinding tembok setengah bata. Usaha sudah berjalan 2.0 tahun dengan pelanggan yang lumayan stabil. Pendidikan SMP, bisa baca tulis dan hitung dengan baik. Literasi keuangan cukup baik. Anak-anak masih sekolah semua. Transparan dan kooperatif saat wawancara.",
+    "field_agent_name": "Bapak Jessica Firgantoro, M.M.",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 113,
+    "borrower_id": 75,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-24",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat sepi tapi stabil. Ibu Sakura menjelaskan omzet harian sekitar Rp 128,990, tergantung hari. Kalau hari pasar atau weekend biasanya lebih ramai. Modal kerja harian sekitar Rp 1,547,878 untuk beli bahan baku dan stok. Tempat usaha milik sendiri. Peralatan usaha dalam kondisi baik. Rencana ingin renovasi ruang jahit supaya lebih luas.",
+    "field_agent_name": "Ibu Ade Marbun",
+    "nlp_analysis_status": "pending"
+  },
+  {
+    "id": 114,
+    "borrower_id": 75,
+    "loan_id": null,
+    "note_type": "follow_up",
+    "visit_date": "2025-10-21",
+    "note_text": "Observasi bisnis Jahit Pakaian (Tailoring). Usaha terlihat ramai dengan pelanggan tetap. Ibu Sakura menjelaskan omzet harian sekitar Rp 128,990, tergantung hari. Kalau hari kerja dan weekday lebih sepi. Modal kerja harian sekitar Rp 1,547,878 untuk beli bahan baku dan stok. Sewa tempat bulanan. Peralatan usaha ada yang perlu diganti. Rencana ingin renovasi ruang jahit supaya lebih luas.",
+    "field_agent_name": "Bapak Kiandra Wahyuni",
+    "nlp_analysis_status": "pending"
+  }
+]
