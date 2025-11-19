@@ -60,14 +60,14 @@ export default function Home() {
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Analytics</CardTitle>
+              <CardTitle>Dashboard</CardTitle>
               <CardDescription>
                 Portfolio statistics, risk distribution and performance metrics
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Link href="/analytics">
-                <Button className="w-full">View Analytics</Button>
+              <Link href="/dashboard">
+                <Button className="w-full">View Dashboard</Button>
               </Link>
             </CardContent>
           </Card>
