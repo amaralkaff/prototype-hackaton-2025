@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { SiteHeader } from "@/components/site-header";
 
 export default function BorrowersPage() {
   const [borrowers, setBorrowers] = useState<Borrower[]>([]);
@@ -63,8 +64,10 @@ export default function BorrowersPage() {
   };
 
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="container mx-auto px-4 py-8">
+    <>
+      <SiteHeader />
+      <div className="flex flex-1 flex-col">
+        <div className="container mx-auto px-4 py-8">
 
         <Card className="shadow-lg">
           <CardHeader>
@@ -215,5 +218,6 @@ export default function BorrowersPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

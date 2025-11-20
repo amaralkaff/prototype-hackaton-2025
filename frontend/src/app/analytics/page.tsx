@@ -6,6 +6,7 @@ import { loansAPI } from "@/lib/api";
 import type { LoansStatistics } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { SiteHeader } from "@/components/site-header";
 
 export default function AnalyticsPage() {
   const [statistics, setStatistics] = useState<LoansStatistics | null>(null);
@@ -38,8 +39,10 @@ export default function AnalyticsPage() {
   };
 
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="container mx-auto px-4 py-8">
+    <>
+      <SiteHeader />
+      <div className="flex flex-1 flex-col">
+        <div className="container mx-auto px-4 py-8">
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Portfolio Analytics</h1>
@@ -215,5 +218,6 @@ export default function AnalyticsPage() {
         )}
       </div>
     </div>
+    </>
   );
 }

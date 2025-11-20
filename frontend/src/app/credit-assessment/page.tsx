@@ -7,6 +7,7 @@ import type { Borrower, CreditAssessment } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { SiteHeader } from "@/components/site-header";
 
 export default function CreditAssessmentPage() {
   const [borrowers, setBorrowers] = useState<Borrower[]>([]);
@@ -72,8 +73,10 @@ export default function CreditAssessmentPage() {
   const selectedBorrower = borrowers.find(b => b.id === selectedBorrowerId);
 
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="container mx-auto px-4 py-8">
+    <>
+      <SiteHeader />
+      <div className="flex flex-1 flex-col">
+        <div className="container mx-auto px-4 py-8">
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Credit Assessment</h1>
@@ -279,5 +282,6 @@ export default function CreditAssessmentPage() {
         )}
       </div>
     </div>
+    </>
   );
 }

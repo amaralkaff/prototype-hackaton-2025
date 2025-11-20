@@ -1,6 +1,6 @@
-import Image from "next/image"
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
+import { SiteBreadcrumb } from "@/components/site-breadcrumb"
 
 export function SiteHeader() {
   return (
@@ -11,14 +11,7 @@ export function SiteHeader() {
           orientation="vertical"
           className="mx-2 data-[orientation=vertical]:h-4"
         />
-        <Image
-          src="/logo.png"
-          alt="Amarta AI"
-          width={24}
-          height={24}
-          className="shrink-0"
-        />
-        <h1 className="text-base font-semibold">Amarta AI Dashboard</h1>
+        <SiteBreadcrumb />
       </div>
     </header>
   )

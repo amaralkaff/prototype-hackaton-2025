@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { SiteHeader } from "@/components/site-header";
 
 export default function LoansPage() {
   const [loans, setLoans] = useState<Loan[]>([]);
@@ -79,8 +80,10 @@ export default function LoansPage() {
   }, [searchTerm]);
 
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="container mx-auto px-4 py-8">
+    <>
+      <SiteHeader />
+      <div className="flex flex-1 flex-col">
+        <div className="container mx-auto px-4 py-8">
 
         {error && (
           <div className="bg-destructive/10 text-destructive px-4 py-3 rounded mb-4">
@@ -279,5 +282,6 @@ export default function LoansPage() {
         )}
       </div>
     </div>
+    </>
   );
 }
