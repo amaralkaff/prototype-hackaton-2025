@@ -85,6 +85,26 @@ export interface LoansStatistics {
   active_loans: number
   completed_loans: number
   defaulted_loans: number
+  loan_portfolio: {
+    total_loans: number
+    active_loans: number
+    completed_loans: number
+    defaulted_loans: number
+    completion_rate: number
+  }
+  financial_summary: {
+    total_disbursed: number
+    total_expected_repayment: number
+    total_collected: number
+    outstanding_amount: number
+    collection_rate: number
+  }
+  repayment_behavior: {
+    total_payments: number
+    on_time_payments: number
+    late_payments: number
+    average_days_overdue: number
+  }
 }
 
 export interface BorrowerSummary {

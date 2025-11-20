@@ -107,17 +107,26 @@ async def get_loans_statistics():
         repayments_response = supabase.table('repayments').select('*').execute()
         repayments = repayments_response.data
 
-        # Calculate statistics
+        # Calculate loan portfolio statistics
         total_loans = len(loans)
         active_loans = sum(1 for l in loans if l['loan_status'] == 'active')
         completed_loans = sum(1 for l in loans if l['loan_status'] == 'completed')
         defaulted_loans = sum(1 for l in loans if l['loan_status'] == 'defaulted')
 
+        # Calculate financial statistics
         total_disbursed = sum(l['loan_amount'] for l in loans)
         avg_loan_amount = total_disbursed / total_loans if total_loans > 0 else 0
 
         total_expected = sum(r['expected_amount'] for r in repayments)
         total_collected = sum(r['paid_amount'] for r in repayments)
+        outstanding_amount = total_expected - total_collected
+        collection_rate = round((total_collected / total_expected * 100) if total_expected > 0 else 0, 2)
+
+        # Calculate repayment behavior statistics
+        total_payments = len(repayments)
+        on_time_payments = sum(1 for r in repayments if r['days_overdue'] == 0)
+        late_payments = sum(1 for r in repayments if r['days_overdue'] > 0)
+        average_days_overdue = round(sum(r['days_overdue'] for r in repayments) / total_payments if total_payments > 0 else 0, 2)
 
         return {
             "total_loans": total_loans,
@@ -126,7 +135,27 @@ async def get_loans_statistics():
             "defaulted_loans": defaulted_loans,
             "total_amount_disbursed": total_disbursed,
             "total_amount_repaid": total_collected,
-            "avg_loan_amount": avg_loan_amount
+            "avg_loan_amount": avg_loan_amount,
+            "loan_portfolio": {
+                "total_loans": total_loans,
+                "active_loans": active_loans,
+                "completed_loans": completed_loans,
+                "defaulted_loans": defaulted_loans,
+                "completion_rate": round((completed_loans / total_loans * 100) if total_loans > 0 else 0, 2)
+            },
+            "financial_summary": {
+                "total_disbursed": total_disbursed,
+                "total_expected_repayment": total_expected,
+                "total_collected": total_collected,
+                "outstanding_amount": outstanding_amount,
+                "collection_rate": collection_rate
+            },
+            "repayment_behavior": {
+                "total_payments": total_payments,
+                "on_time_payments": on_time_payments,
+                "late_payments": late_payments,
+                "average_days_overdue": average_days_overdue
+            }
         }
 
     except Exception as e:
