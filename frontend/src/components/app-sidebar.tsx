@@ -6,7 +6,7 @@ import {
   BarChartIcon,
   CreditCardIcon,
   UsersIcon,
-  BrainCircuitIcon,
+  BrainCogIcon,
   TrendingUpIcon,
 } from "lucide-react"
 
@@ -47,7 +47,7 @@ const data = {
     {
       title: "Credit Assessment",
       url: "/credit-assessment",
-      icon: BrainCircuitIcon,
+      icon: BrainCogIcon,
     },
     {
       title: "Analytics",
