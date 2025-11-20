@@ -93,6 +93,46 @@ async def list_loans(
         raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
 
 
+@router.get("/statistics")
+async def get_loans_statistics():
+    """
+    Get overall loan portfolio statistics
+    """
+    try:
+        # Get all loans
+        loans_response = supabase.table('loans').select('*').execute()
+        loans = loans_response.data
+
+        # Get all repayments
+        repayments_response = supabase.table('repayments').select('*').execute()
+        repayments = repayments_response.data
+
+        # Calculate statistics
+        total_loans = len(loans)
+        active_loans = sum(1 for l in loans if l['loan_status'] == 'active')
+        completed_loans = sum(1 for l in loans if l['loan_status'] == 'completed')
+        defaulted_loans = sum(1 for l in loans if l['loan_status'] == 'defaulted')
+
+        total_disbursed = sum(l['loan_amount'] for l in loans)
+        avg_loan_amount = total_disbursed / total_loans if total_loans > 0 else 0
+
+        total_expected = sum(r['expected_amount'] for r in repayments)
+        total_collected = sum(r['paid_amount'] for r in repayments)
+
+        return {
+            "total_loans": total_loans,
+            "active_loans": active_loans,
+            "completed_loans": completed_loans,
+            "defaulted_loans": defaulted_loans,
+            "total_amount_disbursed": total_disbursed,
+            "total_amount_repaid": total_collected,
+            "avg_loan_amount": avg_loan_amount
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
+
+
 @router.get("/{loan_id}", response_model=LoanResponse)
 async def get_loan(loan_id: str):
     """
@@ -207,52 +247,3 @@ async def get_loan_summary(loan_id: str):
         raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
 
 
-@router.get("/statistics/overview")
-async def get_loans_statistics():
-    """
-    Get overall loan portfolio statistics
-    """
-    try:
-        # Get all loans
-        loans_response = supabase.table('loans').select('*').execute()
-        loans = loans_response.data
-
-        # Get all repayments
-        repayments_response = supabase.table('repayments').select('*').execute()
-        repayments = repayments_response.data
-
-        # Calculate statistics
-        total_loans = len(loans)
-        active_loans = sum(1 for l in loans if l['loan_status'] == 'active')
-        completed_loans = sum(1 for l in loans if l['loan_status'] == 'completed')
-        defaulted_loans = sum(1 for l in loans if l['loan_status'] == 'defaulted')
-
-        total_disbursed = sum(l['loan_amount'] for l in loans)
-        total_expected = sum(r['expected_amount'] for r in repayments)
-        total_collected = sum(r['paid_amount'] for r in repayments)
-
-        return {
-            "loan_portfolio": {
-                "total_loans": total_loans,
-                "active_loans": active_loans,
-                "completed_loans": completed_loans,
-                "defaulted_loans": defaulted_loans,
-                "completion_rate": round((completed_loans / total_loans * 100) if total_loans > 0 else 0, 2)
-            },
-            "financial_summary": {
-                "total_disbursed": total_disbursed,
-                "total_expected_repayment": total_expected,
-                "total_collected": total_collected,
-                "outstanding_amount": total_expected - total_collected,
-                "collection_rate": round((total_collected / total_expected * 100) if total_expected > 0 else 0, 2)
-            },
-            "repayment_behavior": {
-                "total_payments": len(repayments),
-                "on_time_payments": sum(1 for r in repayments if r['days_overdue'] == 0),
-                "late_payments": sum(1 for r in repayments if r['days_overdue'] > 0),
-                "average_days_overdue": round(sum(r['days_overdue'] for r in repayments) / len(repayments) if repayments else 0, 2)
-            }
-        }
-
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
