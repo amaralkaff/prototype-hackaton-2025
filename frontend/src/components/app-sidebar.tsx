@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import {
   BarChartIcon,
   CreditCardIcon,
@@ -67,7 +68,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="/">
-                <BrainCircuitIcon className="h-5 w-5 text-primary" />
+                <Image
+                  src="/logo.png"
+                  alt="Amarta AI Logo"
+                  width={28}
+                  height={28}
+                  className="shrink-0"
+                />
                 <span className="text-base font-semibold">Amarta AI</span>
               </a>
             </SidebarMenuButton>
